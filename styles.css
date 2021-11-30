@@ -9,7 +9,6 @@
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
-    overflow-y: hidden;
 }
 
 
@@ -237,6 +236,10 @@ font-size: 2rem;
 
 
 @media (max-width: 550px){
+
+    body > *{
+        overflow-x: hidden;
+    }
 
     .navigation{
         justify-content: flex-end;
