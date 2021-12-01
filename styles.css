@@ -234,6 +234,157 @@ font-size: 2rem;
     align-items: center;
 }
 
+.about{
+    width: 58%;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.about h3{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.about p{
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.about figure img{
+    margin-top: 3rem;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.about .our_pics{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about .our_pics img{
+    width: 20rem;
+    height: 25rem;
+    margin-bottom: -1rem;
+}
+
+.about h2{
+    margin-top: 10rem;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+.about a{
+    font-size: 2rem;
+    
+    text-decoration: none;
+    color: black;
+}
+
+.pre_footer{
+    background-color: #9AA8B1;
+    height: 70vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.pre_footer h3{
+    font-size: 3rem;
+    font-weight: 600;
+
+}
+
+.pre_footer >*{
+    margin-top: 2rem;
+}
+
+.footer{
+    background-color: #F9F9F9;
+    height: 50vh;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.menu_links{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 15rem;
+}
+
+.menu_links a{
+text-decoration: none;
+color: black;
+font-size: 1.4rem;
+font-weight: bold;
+}
+
+.new_signUp{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.new_signUp h3{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.new_signUp p{
+    font-size: 1rem;
+    width: 60%;
+    margin-bottom: 1.5rem;
+}
+
+.new_signUp input{
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px  solid black;
+    width: 60%;
+}
+
+.new_signUp input:focus{
+    outline: none;
+}
+
+.btn{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    height: 4rem;
+    width: 4rem;
+    padding: 0.8rem 0.8rem 0.8rem 1.2rem;
+    font-weight: bold;
+}
+
+.btn:active{
+    transform: scale(0.8);
+}
+
 
 @media (max-width: 550px){
 
@@ -354,5 +505,21 @@ font-size: 2rem;
     }
     .hero_text a{
         font-size: 2.5rem;
+    }
+
+    .about .our_pics img{
+        width: 10rem;
+        height: 15rem;
+    }
+    .pre_footer{
+        height: 50vh;
+    }
+
+    .footer-text{
+        flex-direction: column;
+    }
+
+    .new_signUp{
+        width: 100%;
     }
 }
