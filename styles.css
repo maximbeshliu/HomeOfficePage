@@ -517,6 +517,7 @@ font-weight: bold;
 
     .footer-text{
         flex-direction: column;
+        width: 100%;
     }
 
     .new_signUp{
