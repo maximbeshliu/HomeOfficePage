@@ -9,12 +9,21 @@
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
+
+body{
+    position: relative;
+    top: 9vh;
+    left: 0;
+}
+
 
 
 .wrapper{
     margin: auto;
     width: 90%;
+    
 }
 
 /* Hero Block */
@@ -25,8 +34,14 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 11vh;
-    position: relative;
+    height: 9vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 99;
+    width: 100%;
+    padding: 0 9rem 0 6.5rem;
 }
 
 .hamburger_menu{
@@ -386,7 +401,7 @@ font-weight: bold;
 }
 
 
-@media (max-width: 550px){
+@media (max-width: 710px){
 
     body > *{
         overflow-x: hidden;
@@ -394,6 +409,7 @@ font-weight: bold;
 
     .navigation{
         justify-content: flex-end;
+        padding-right: 3rem;
     }
 
     .navigation .menu {
