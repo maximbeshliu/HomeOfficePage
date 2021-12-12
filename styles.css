@@ -65,11 +65,33 @@ body{
  width: 20rem;
 }
 
-.navigation_items li a{
+
+.hover_effect{
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-size: 1.7rem;
+    position: relative;
+    padding: 1rem;
+}
+
+
+.hover_effect:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hover_effect::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #A0A0A0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .3s ease;
 }
 
 .logo{
@@ -123,12 +145,38 @@ body{
 font-size: 2rem;
 }
 
-.hero_text a{
+.learnMore_hover{
     text-decoration: none;
     color: white;
     font-size: 3.5rem;
     margin-top: 5rem;
+    padding: 1rem;
+    position: relative;
 }
+
+.learnMore_hover:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.learnMore_hover:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.learnMore_hover::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: white;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .3s ease;
+}
+
 
 .hero-block_text{
     text-align: center;
